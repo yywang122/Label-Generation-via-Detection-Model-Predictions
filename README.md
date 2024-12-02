@@ -6,11 +6,11 @@ This process outlines how to train a YOLO model using a small annotated dataset,
 
 ### Step 1: Prepare a Small Annotated Dataset to Train the YOLO Model
 
-#### 1.1 Data Preparation
+#### 1.1 [Data Preparation](https://www.makesense.ai/)
 - Collect and prepare a small annotated dataset. The images should have corresponding object annotations (bounding boxes) and class labels.
 - The annotation format must comply with YOLO’s required format. Each image should have an associated `.txt` annotation file containing the class label and the bounding box coordinates (object position in the image).
 
-#### 1.2 Install and Configure YOLO Environment
+#### 1.2 Install and Configure [YOLO](https://github.com/ultralytics/ultralytics) Environment
 - Choose a YOLO model version, such as YOLOv5 or YOLOv8, which typically offer better performance and ease of use.
 - Set up the YOLO environment locally and install required dependencies such as PyTorch and other necessary libraries.
 - Configure YOLO's configuration files, ensuring that the training and test datasets are correctly loaded.
