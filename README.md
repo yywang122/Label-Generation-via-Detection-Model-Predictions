@@ -36,13 +36,29 @@ This process outlines how to train a YOLO model using a small annotated dataset,
       b.jpg ...
   ```
 - Run the following command to process the files:
+  
   `python build_datasty.py --ori_path {path_to_directory_mentioned_above} --save_path {rebuilt_dataset_saving_path} --train 0.7 --val 0.2`
+  
   Notes: 
-  - Renaming Duplicates: Files with the same name across subdirectories are renamed to avoid conflicts.
+  - Renaming Duplicates: Renames files with duplicate names across subdirectories.
   - Removing Unpaired Files: Deletes any files without a corresponding pair.
   - Dataset Splitting (in this case): Divides the dataset into training (70%), validation (20%), and test (10%) subsets. 
   
-        
+- Add `data.yaml` to the built dataset, creating the following final directory structure::
+    ```
+    final_dataset/
+      train/
+        labels/
+          a.txt
+          b.txt ...
+        images/
+            a.jpg
+            b.jpg ...
+      valid/ ...
+      test/ ...
+      data.yaml      
+    ```
+  
 ### Step 2: YOLO Model Training
 #### 2.1 Install and Configure [YOLO](https://github.com/ultralytics/ultralytics) Environment
 - Choose a YOLO model version, such as YOLOv5 or YOLOv8, which typically offer better performance and ease of use.
