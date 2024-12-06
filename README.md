@@ -36,7 +36,7 @@ This process outlines how to train a YOLO model using a small annotated dataset,
       b.jpg ...
   ```
 - Run the following command to process the files:
-   `python build_datasty.py --ori_path {path_to_directory_mentioned_above} --save_path {rebuilt_dataset_saving_path} --train 0.7 --val 0.2`
+  `python build_datasty.py --ori_path {path_to_directory_mentioned_above} --save_path {rebuilt_dataset_saving_path} --train 0.7 --val 0.2`
   Notes: 
   - Renaming Duplicates: Files with the same name across subdirectories are renamed to avoid conflicts.
   - Removing Unpaired Files: Deletes any files without a corresponding pair.
